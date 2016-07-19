@@ -23,7 +23,7 @@ if ( myDate.getHours() >= 6 && myDate.getHours() <= 12 )
 { 
     document.getElementById('deeldag').innerHTML='Ochtend'; 
 } 
-else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
+else 
 if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 ) 
 { 
     document.getElementById('deeldag').innerHTML='Middag'; 
@@ -49,7 +49,7 @@ var month = months[myDate.getMonth()];
     var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    if (i < 10) {i = "0" + i}; 
     return i;
 
 
