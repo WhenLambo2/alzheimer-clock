@@ -1,13 +1,13 @@
 function myFunction() {
     var d = new Date();
     var weekday = new Array(7);
-    weekday[0] = "Maanantai";
-    weekday[1] = "Tiistai";
-    weekday[2] = "Keskiviikko";
-    weekday[3] = "Torstai";
-    weekday[4] = "Perjantai";
-    weekday[5] = "Lauantai";
-    weekday[6] = "Sunnuntai";
+    weekday[0] = "Sunnuntai";
+    weekday[1] = "Maanantai";
+    weekday[2] = "Tiistai";
+    weekday[3] = "Keskiviiko";
+    weekday[4] = "Torstai";
+    weekday[5] = "Perjantai";
+    weekday[6] = "Lauantai";
 
     var n = weekday[d.getDay()];
     document.getElementById("dotw").innerHTML = n;
